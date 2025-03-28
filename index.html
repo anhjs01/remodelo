@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofas Edmonton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="container">
+    </div>    
+    <template id="temp-menu-primary"> 
+
+        
+        <header class="header">
+            <div class="container-MENU">
+                <div class="header-content">
+                    <h1>Sofas Edmonton</h1>
+                    <button class="menu-toggle" id="menuToggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="nav-admin" style="display: none;">
+                                <a href="#" data-template="temp-new-furniture">New Furniture</a>
+                            </li>
+                            <li class="nav-admin" style="display: none;">
+                                <a href="#" id="logout-btn">Logout</a>
+                            </li>
+                            <li class="nav-user">
+                                <a href="login" data-template="temp-login">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+    <!-- Hero Section -->
+     <div class="" id="home"></div>
+    <section class="hero">
+        <div class="container">
+            <h2>Furniture Restoration and Redesign</h2>
+            <p>We transform your old furniture into unique, modern pieces while preserving their essence and improving functionality.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+     <div id="services"></div>
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are experts in furniture restoration and redesign with over 15 years of experience. We specialize in upholstery, wood restoration, and complete transformation of antique pieces.</p>
+                <p>We work with the best materials on the market, including imported fabrics, noble woods, and high-quality finishes to ensure exceptional results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+     <div id="gallery"></div>
+    <section class="projects">
+        <div class="container-cards">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider1">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Premium velvet fabric</li>
+                                <li>Hardwood frame</li>
+                                <li>High-density foam</li>
+                            </ul>
+                            <p>Complete restoration of a 1950s sofa including reupholstery and frame repair</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Vintage Sofa Restoration</h3>
+                </div>
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider2">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Natural leather</li>
+                                <li>Oak wood</li>
+                                <li>Brass hardware</li>
+                            </ul>
+                            <p>Set restored with new upholstery and refinished wood</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3> sofa restored</h3>
+                </div>
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider3">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>High-resistance linen</li>
+                                <li>Organic cotton</li>
+                                <li>Memory foam</li>
+                            </ul>
+                            <p>Complete restoration of a sofa including new upholstery and spring repair</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="https://i.pinimg.com/736x/8d/6e/ea/8d6eea2fd68e8b6bd6a02107348c946e.jpg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Classic Chesterfield Sofa</h3>
+                </div>
+                
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider4">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Vegan leather</li>
+                                <li>Stainless steel</li>
+                                <li>Ergonomic padding</li>
+                            </ul>
+                            <p>Reconstruction with new contemporary design</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Retro Bar Armchair</h3>
+                </div>
+                
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider5">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Teak wood</li>
+                                <li>Weather-resistant fabric</li>
+                                <li>Marine paint</li>
+                            </ul>
+                            <p>Restoration of outdoor furniture set with UV and moisture protection</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Ecological armchair reconstruction with sustainable materials and updated design</h3>
+                </div>
+                
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider6">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Natural silk</li>
+                                <li>Walnut wood</li>
+                                <li>Ecological lacquer</li>
+                            </ul>
+                            <p>Ecological armchair reconstruction with sustainable materials and updated design</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Oriental Screen</h3>
+                </div>
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider7">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Merino wool</li>
+                                <li>Synthetic leather</li>
+                                <li></li>
+                            </ul>
+                            <p>Armchair transformation with new premium materials and modern mechanism</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Executive Armchair</h3>
+                </div>
+                
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider8">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Natural rattan</li>
+                                <li>Waterproof cushions</li>
+                                <li>Protective varnish</li>
+                            </ul>
+                            <p>Ecological armchair reconstruction with sustainable materials and updated design</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Rattan Patio Set</h3>
+                </div>
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider9">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Recycled velvet</li>
+                                <li>Treated pine wood</li>
+                                <li>Natural fiber filling</li>
+                            </ul>
+                            <p>Ecological armchair reconstruction with sustainable materials and updated design</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Vintage Ecological Armchair</h3>
+                </div>
+                
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider10">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Handcrafted embossed leather</li>
+                                <li>Solid oak structure</li>
+                                <li>Aged metal details</li>
+                            </ul>
+                            <p>Restoration of closet</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Sofa Restoration</h3>
+                </div>
+
+                <div class="project-card">
+                    <div class="slider-container">
+                        <div class="before-after-slider" id="slider10">
+                            <div class="after-image"></div>
+                            <div class="before-image"></div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <!-- Video -->
+                        <video class="project-video" preload="auto" loop muted>
+                            <source src="./video/vd1.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video
+                        </video>
+                        
+                        <div class="project-details hidden">
+                            <h4>Materials used:</h4>
+                            <ul>
+                                <li>Handcrafted embossed leather</li>
+                                <li>Solid oak structure</li>
+                                <li>Aged metal details</li>
+                            </ul>
+                            <p>Western-style sofa restoration with traditional techniques and premium finishes</p>
+                        </div>
+                        <button class="toggle-details">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Vintage Chair Restoration</h3>
+                </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <div id="contact"></div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            +1 780-920-61-89
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            sofassedmonton01@gmail.com
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            123 Main Street, Edmonton
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Furniture restoration</li>
+                        <li>Upholstery</li>
+                        <li>Varnishing</li>
+                        <li>Custom design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template>
+
+
+<template id="temp-login">
+<div class="container-login">
+
+    <form class="form">
+        <div class="form_front">
+            <div class="form_details">Login</div>
+            <input type="text" class="input" placeholder="Username">
+            <input type="text" class="input" placeholder="Password">
+            <button data-template="temp-menu-primary" class="btn">Login</button>
+        </div>
+    </form>
+</div>
+</template>
+
+<template id="temp-new-furniture">
+    <div class="container-new-furniture">
+      <h2>Add New Furniture</h2>
+      <form id="form-new-furniture" class="form-upload">
+        <!-- Name field -->
+        <div class="form-group">
+          <label for="name">Furniture name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+  
+        <!-- Description field -->
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+  
+        <!-- Image upload (before/after) -->
+        <div class="image-upload-group">
+          <div class="image-upload-box">
+            <label for="image-before">BEFORE image</label>
+            <input type="file" id="image-before" accept="image/*" required>
+            <div class="image-preview" id="preview-before"></div>
+          </div>
+          
+          <div class="image-upload-box">
+            <label for="image-after">AFTER image</label>
+            <input type="file" id="image-after" accept="image/*" required>
+            <div class="image-preview" id="preview-after"></div>
+          </div>
+        </div>
+  
+        <!-- Materials field -->
+        <div class="form-group">
+            <label for="materials">Materials (comma separated)</label>
+            <input type="text" id="materials" name="materials" required>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="button" class="btn-cancel" data-template="temp-menu-primary">Cancel</button>
+          <button type="submit" class="btn-submit">Save Furniture</button>
+        </div>
+      </form>
+    </div>
+  </template>
+    
+    <!-- Scripts in CORRECT ORDER -->
+    <script src="view.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
