@@ -24,6 +24,141 @@ body {
     padding: 0 1rem;
     width: 100%;
 }
+/* Estilos para la sección de contactos en el nav */
+.nav-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 1px solid rgba(90, 56, 33, 0.1);
+}
+
+.nav-social > span {
+    color: #967259;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav-social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+/* Añade esto a tu CSS para que los enlaces se vean como botones */
+.social-buttons a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* Mantén todos los demás estilos que ya tenías para .button */
+}
+/* Mantenemos TODOS los estilos originales de los botones */
+.button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.button svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+    z-index: 9;
+    transition: all 0.3s ease;
+}
+/* Colores originales de los botones */
+.social-buttons a.button:nth-child(1) { /* Facebook */
+    background: #1877f2; /* Color oficial de Facebook */
+}
+
+.social-buttons a.button:nth-child(2) { /* Instagram */
+    background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social-buttons a.button:nth-child(3) { /* WhatsApp */
+    background: linear-gradient(120deg, #02ff2c, #008a12);
+}
+
+.social-buttons a.button:nth-child(4) { /* Twitter/X */
+    background: rgb(69, 187, 255);
+}
+
+/* Mantén todos los demás estilos de hover y efectos que ya tenías */
+.button:hover::before {
+    width: 0px;
+    height: 0px;
+}
+/* Colores originales de los botones */
+.button:nth-child(1) {
+    background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.button:nth-child(2) {
+    background: linear-gradient(120deg, #02ff2c, #008a12);
+}
+
+.button:nth-child(3) {
+    background: rgb(69, 187, 255);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color: #5a483a;
+    border-radius: 50%;
+    z-index: -1;
+    border: 0px solid rgba(255, 255, 255, 0.411);
+    transition: all 0.4s ease;
+}
+
+.button:hover::before {
+    width: 0px;
+    height: 0px;
+}
+
+/* Responsive para el nav */
+@media (max-width: 768px) {
+    .nav-social {
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    .nav-social-buttons {
+        flex-wrap: wrap;
+    }
+    
+    /* Ocultamos los botones flotantes cuando el nav está visible */
+    .nav.visible ~ .social-buttons {
+        display: none !important;
+    }
+}
+
+/* Ajustes para desktop */
+@media (min-width: 769px) {
+    .nav-social {
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+}
 
 /* Header styles */
 .header {
